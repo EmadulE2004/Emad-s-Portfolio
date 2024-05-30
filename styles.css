@@ -1,0 +1,364 @@
+:root{
+    --text-color:black;
+    --link-color:#253342;
+    --backround-color:beige;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Freeman', sans-serif;
+    background-color: var(--backround-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+nav .left a{
+    color:var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color:var(--text-color);
+    margin: 0 10px;
+
+}
+
+nav.right a:last-child{
+    color: var(--backround-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/*Section 1:Emadul*/
+.Emadul-section{
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+
+}
+.Emadul-section .text{
+    flex: 5;
+}
+.Emadul-section .text h2{
+    font-size: 45px;
+}
+
+.Emadul-section .text .links{
+    margin-top: 25px;
+}
+
+.Emadul-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+.Emadul-section .text .links a:hover{
+    color: green;
+    border:2px solid green;
+}
+
+.Emadul-section .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.Emadul-section .headshot img{
+    width: 250px;
+    border-radius: 45%;
+    
+}
+
+
+
+.Skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+}
+
+.Skills-section h2{
+    text-align: center;
+    font-size: 35px;
+}
+.Skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Skills-section .class{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Skills-section .class .classes span{
+    font-size: 18px;
+}
+.Skills-section .class .classes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 265px;
+    padding: 10px 20px;
+    margin: 4px;
+    border: 1.5px solid lightslategray;
+    border-radius: 5px;
+
+}
+.Skills-section .class .classes img{
+    width:40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+
+.Project-section .Project .Projects img {
+    width: 100px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 1px;
+}
+
+.Project-section .Project .Projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 280px;
+    padding: 10px 20px;
+    margin: 4px;
+    border: 1.5px solid lightslategray;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;  
+}
+.Project-section .Project .span{
+    text-align: center;
+}
+
+.Project-section .Project .Projects:hover {
+    background-color: olive; 
+}
+
+.Project-section .Project .Projects span {
+    font-size: 18px;
+}
+
+.Project-section .Project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Project-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.Project-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.Project-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Education-section h2{
+    margin-left: 50px;
+    font-size: 35px;
+
+
+
+}
+
+.Education-section .text {
+    margin-left: 50px;
+    font-size: 18px;
+
+
+}
+.Education-section .Wayne .Education img{
+    
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 1px;
+    margin-left: 40px;
+
+
+}
+
+.Education-section .text{
+    flex: 5;
+}
+
+.Education-section .head .heading{
+    font-size: 35px;
+    margin-left: 40px;
+   
+  
+}
+
+.Education-section .Education .courses{
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+
+.contact-section .group form textarea{
+    font-family: 'Times New Roman', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+    transition: .1s;
+
+}
+.contact-section .group form button{
+    font-size: 16px;
+    font-family:'Times New Roman' , sans-serif ;
+    color: bisque;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+
+}
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+
+    
+
+}
+
+
+
+.contact-section{
+    padding: 0 20px;
+}
+
+
+
+
+
+
+@media(max-width: 850px){
+    .Emadul-section .text h2{
+        font-size: 35px;
+    }
+}
+@media(max-width: 740px){
+    .Emadul-section{
+        flex-direction: column-reverse;
+        
+    }
+    .Emadul-section .headshot img{
+        width: 300px;
+    }
+    .contact-section .group {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 600px){
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a :last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+    .Emadul-section{
+        padding: 0 20px;
+    }
+    .Emadul-section .text h2{
+        font-size: 30px;
+    }
+
+    .Skills-section{
+        padding: 0 20px;
+    }
+
+    .Skills-section .classes .class span{
+        font-size: 16px;
+    }
+}
