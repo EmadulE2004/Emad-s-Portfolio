@@ -301,7 +301,19 @@ nav .right a span{
 
 }
 
+.contact-section .group form .form-group {
+    margin-bottom: 15px;
+}
 
+.contact-section .group form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-section .group form .form-group input,
+.contact-section .group form .form-group textarea {
+    width: 100%;
+}
 
 .contact-section{
     padding: 0 20px;
